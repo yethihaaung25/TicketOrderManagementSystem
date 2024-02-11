@@ -1,0 +1,13 @@
+D:\Training Classes 2023\Asp.net MVC5\Batch - 12\.net core basic\TOMS\TOMS.WinFormHelper\bin\Debug\TOMS.WinFormHelper.exe.config
+D:\Training Classes 2023\Asp.net MVC5\Batch - 12\.net core basic\TOMS\TOMS.WinFormHelper\bin\Debug\TOMS.WinFormHelper.exe
+D:\Training Classes 2023\Asp.net MVC5\Batch - 12\.net core basic\TOMS\TOMS.WinFormHelper\bin\Debug\TOMS.WinFormHelper.pdb
+D:\Training Classes 2023\Asp.net MVC5\Batch - 12\.net core basic\TOMS\TOMS.WinFormHelper\bin\Debug\TOMS.Helper.dll
+D:\Training Classes 2023\Asp.net MVC5\Batch - 12\.net core basic\TOMS\TOMS.WinFormHelper\bin\Debug\TOMS.Helper.pdb
+D:\Training Classes 2023\Asp.net MVC5\Batch - 12\.net core basic\TOMS\TOMS.WinFormHelper\obj\Debug\TOMS.WinFormHelper.csproj.AssemblyReference.cache
+D:\Training Classes 2023\Asp.net MVC5\Batch - 12\.net core basic\TOMS\TOMS.WinFormHelper\obj\Debug\TOMS.WinFormHelper.Form1.resources
+D:\Training Classes 2023\Asp.net MVC5\Batch - 12\.net core basic\TOMS\TOMS.WinFormHelper\obj\Debug\TOMS.WinFormHelper.Properties.Resources.resources
+D:\Training Classes 2023\Asp.net MVC5\Batch - 12\.net core basic\TOMS\TOMS.WinFormHelper\obj\Debug\TOMS.WinFormHelper.csproj.GenerateResource.cache
+D:\Training Classes 2023\Asp.net MVC5\Batch - 12\.net core basic\TOMS\TOMS.WinFormHelper\obj\Debug\TOMS.WinFormHelper.csproj.CoreCompileInputs.cache
+D:\Training Classes 2023\Asp.net MVC5\Batch - 12\.net core basic\TOMS\TOMS.WinFormHelper\obj\Debug\TOMS.WinFormHelper.csproj.CopyComplete
+D:\Training Classes 2023\Asp.net MVC5\Batch - 12\.net core basic\TOMS\TOMS.WinFormHelper\obj\Debug\TOMS.WinFormHelper.exe
+D:\Training Classes 2023\Asp.net MVC5\Batch - 12\.net core basic\TOMS\TOMS.WinFormHelper\obj\Debug\TOMS.WinFormHelper.pdb

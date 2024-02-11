@@ -1,0 +1,69 @@
+﻿﻿@{
+    ViewData["Title"] = "Bus Entry";
+}
+<body>
+    @if (TempData["info"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["info"]
+        </div>
+    }
+    <h3>Entry Buses</h3>
+    <form action="/busline/entry" method="post">
+        <div class="mb-3">
+            <label class="form-label">Bus No</label>
+            <input type="text" class="form-control" name="no">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Owner</label>
+            <input type="text" class="form-control" name="Owner">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Driver 1</label>
+            <input type="text" class="form-control" name="Driver1">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">PhoneOfDriver1</label>
+            <input type="tel" class="form-control" name="PhoneOfDriver1">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Helper 1</label>
+            <input type="text" class="form-control" name="Helper1">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">PhoneOfHelper1</label>
+            <input type="tel" class="form-control" name="PhoneOfHelper1">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Driver 2</label>
+            <input type="text" class="form-control" name="Driver2">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">PhoneOfDriver2</label>
+            <input type="tel" class="form-control" name="PhoneOfDriver2">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Helper 2</label>
+            <input type="text" class="form-control" name="Helper2">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">PhoneOfHelper2</label>
+            <input type="tel" class="form-control" name="PhoneOfHelper2">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Number Of Seat</label>
+            <input type="text" class="form-control" name="NumberOfSeat">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Type</label> <br />
+            <input type="radio" class="form-check-input" name="Type" value="Standard" checked>Standard
+            <input type="radio" class="form-check-input" name="Type" value="VIP">VIP
+        </div>
+        <input type="submit" class="btn btn-primary" value="Entry" />
+        <input type="reset" class="btn btn-primary" value="Cancel" />
+    </form>
+</body>

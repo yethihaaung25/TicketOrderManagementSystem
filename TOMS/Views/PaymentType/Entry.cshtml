@@ -1,0 +1,35 @@
+﻿﻿@{
+    ViewData["Title"] = "Payment Type Entry";
+}
+<body>
+    @if (TempData["info"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["info"]
+        </div>
+    }
+    <h3>Entry Payment Type</h3>
+    <form action="/paymenttype/entry" method="post">
+        <div class="mb-3">
+            <label class="form-label">Type</label>
+            <select class="form-select" name="Type">
+                <option value="">Choose One</option>
+                <option value="CB">CB</option>
+                <option value="AYA">AYA</option>
+                <option value="KBZ">KBZ</option>
+                <option value="AGD">AGD</option>
+                <option value="Yoma">Yoma</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Account Name</label>
+            <input type="text" class="form-control" name="AccountName">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Account Number</label>
+            <input type="text" class="form-control" name="AccountNumber">
+        </div>
+        <input type="submit" class="btn btn-primary" value="Entry" />
+        <input type="reset" class="btn btn-primary" value="Cancel" />
+    </form>
+</body>

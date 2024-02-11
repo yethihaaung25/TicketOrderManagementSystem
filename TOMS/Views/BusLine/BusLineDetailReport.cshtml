@@ -1,0 +1,30 @@
+﻿
+
+<h1>Bus Line Detail Report</h1>
+
+@if(TempData["info"] != null)
+{
+    <div class="alert alert-warning">
+        <span>@TempData["info"]</span>
+    </div>
+}
+
+<form class="form-control" action="/busline/BusLineDetailReport" method="post">
+    <div class="form-group mb-2">
+        <label for="staticEmail2" class="">Bus Line No</label>
+        <input type="text" class="form-control" id="staticEmail2" name="No">
+    </div>
+
+    <div class="form-group mb-2">
+        <label for="staticEmail2" class="">Type</label>
+        <select class="form-select" name="Type">
+            <option value="VIP">VIP</option>
+            <option value="Normal">Normal</option>
+        </select>
+    </div>
+    <div class="form-group mb-2">
+        <label for="staticEmail2" class="">Owner</label>
+        <input type="text" class="form-control" id="staticEmail2" name="Owner">
+    </div>
+    <button type="submit" class="btn btn-primary mb-2">Download</button>
+</form>

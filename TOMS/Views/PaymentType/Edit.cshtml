@@ -1,0 +1,36 @@
+﻿@model PaymentTypeViewModel
+﻿@{
+    ViewData["Title"] = "Payment Type Update";
+}
+<body>
+    @if (TempData["info"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["info"]
+        </div>
+    }
+    <h3>Edit Payment Type</h3>
+    <form action="/paymenttype/update" method="post">
+        <input type="hidden" name="Id" value="@Model.Id" />
+        <div class="mb-3">
+            <label class="form-label">Type</label>
+            <select class="form-select" name="Type">
+                <option selected="@(Model.Type == "CB" ? "selected" : null)" value="CB">CB</option>
+                <option selected="@(Model.Type == "AYA" ? "selected" : null)" value="AYA">AYA</option>
+                <option selected="@(Model.Type == "KBZ" ? "selected" : null)" value="KBZ">KBZ</option>
+                <option selected="@(Model.Type == "AGD" ? "selected" : null)" value="AGD">AGD</option>
+                <option selected="@(Model.Type == "Yoma" ? "selected" : null)" value="Yoma">Yoma</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Account Name</label>
+            <input type="text" class="form-control" name="AccountName" value="@Model.AccountName">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Account Number</label>
+            <input type="text" class="form-control" name="AccountNumber" value="@Model.AccountNumber">
+        </div>
+        <input type="submit" class="btn btn-primary" value="Update" />
+        <input type="reset" class="btn btn-primary" value="Cancel" />
+    </form>
+</body>

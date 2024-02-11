@@ -1,0 +1,46 @@
+﻿@model IList<PaymentTypeViewModel>
+
+<h1>Payment Type List Information</h1>
+@if (TempData["info"] != null)
+{
+    <div class="alert alert-info">@TempData["info"]</div>
+}
+
+<table class="table table-striped-columns" id="tableRoute">
+    <thead>
+        <tr>
+            <th scope="col">Sr.No</th>
+            <th scope="col">Type</th>
+            <th scope="col">Account Name</th>
+            <th scope="col">Account Number</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int index = 1;
+        }
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@index</td>
+                <td>@item.Type</td>
+                <td>@item.AccountName</td>
+                <td>@item.AccountNumber</td>
+                <td>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <a class="btn btn-success" href="/busline/edit?id=@item.Id"><i class="fa-solid fa-pen-to-square"></i></a>
+                        <a href="/busline/delete?id=@item.Id" onclick="return confirm('are you sure to delete this recrod?');" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
+                    }
+                </td>
+            </tr>
+            index++;
+        }
+    </tbody>
+</table>
+<script>
+    $(document).ready(function () {
+        $("#tableRoute").DataTable();
+    });
+</script>

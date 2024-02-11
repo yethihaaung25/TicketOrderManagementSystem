@@ -1,0 +1,59 @@
+﻿﻿@{
+    ViewData["Title"] = "Route Entry";
+}
+<body>
+    @if (TempData["info"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["info"]
+        </div>
+    }
+    <h3>Entry Route</h3>
+    <form action="/route/entry" method="post">
+        <div class="mb-3">
+            <label class="form-label">From City</label>
+            <select class="form-select" name="FromCityID">
+                <option value="">Choose From City</option>
+                @foreach (var city in ViewBag.FromCityId)
+                {
+                    <option value="@city.ID">@city.Name</option>
+                }
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">To City</label>
+            <select class="form-select" name="ToCityID">
+                <option value="">Choose To City</option>
+                @foreach (var city in ViewBag.FromCityId)
+                {
+                    <option value="@city.ID">@city.Name</option>
+                }
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Bus Line</label>
+            <select class="form-select" name="BusLineID">
+                <option value="">Choose Bus Line</option>
+                @foreach (var busLine in ViewBag.BusLineId)
+                {
+                    <option value="@busLine.Id">@busLine.Owner</option>
+                }
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Time</label>
+            <input type="time" class="form-control" name="When">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Unit Price</label>
+            <input type="text" class="form-control" name="UnitPrice">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Remark</label>
+            <textarea class="form-control" name="Remark"></textarea>
+        </div>
+        <input type="submit" class="btn btn-primary" value="Entry" />
+        <input type="reset" class="btn btn-primary" value="Cancel" />
+    </form>
+</body>

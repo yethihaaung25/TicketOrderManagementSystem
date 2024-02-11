@@ -1,0 +1,71 @@
+﻿@model BusLineViewModel
+﻿@{
+    ViewData["Title"] = "Bus Entry";
+}
+<body>
+    @if (TempData["info"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["info"]
+        </div>
+    }
+    <h3>Entry Buses</h3>
+    <form action="/busline/update" method="post">
+        <input type="hidden" name="Id" value="@Model.Id" />
+        <div class="mb-3">
+            <label class="form-label">Bus No</label>
+            <input type="text" class="form-control" name="no" value="@Model.No">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Owner</label>
+            <input type="text" class="form-control" name="Owner" value="@Model.Owner">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Driver 1</label>
+            <input type="text" class="form-control" name="Driver1" value="@Model.Driver1">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">PhoneOfDriver1</label>
+            <input type="tel" class="form-control" name="PhoneOfDriver1" value="@Model.PhoneOfDriver1">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Helper 1</label>
+            <input type="text" class="form-control" name="Helper1" value="@Model.Helper1">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">PhoneOfHelper1</label>
+            <input type="tel" class="form-control" name="PhoneOfHelper1" value="@Model.PhoneOfHelper1">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Driver 2</label>
+            <input type="text" class="form-control" name="Driver2" value="@Model.Driver2">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">PhoneOfDriver2</label>
+            <input type="tel" class="form-control" name="PhoneOfDriver2" value="@Model.PhoneOfDriver2">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Helper 2</label>
+            <input type="text" class="form-control" name="Helper2" value="@Model.Helper2">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">PhoneOfHelper2</label>
+            <input type="tel" class="form-control" name="PhoneOfHelper2" value="@Model.PhoneOfHelper2">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Number Of Seat</label>
+            <input type="text" class="form-control" name="NumberOfSeat" value="@Model.NumberOfSeat">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Type</label> <br />
+            <input type="radio" class="form-check-input" name="Type" value="Standard" @(Model.Type == "Standard" ? "Checked" : "")>Standard
+            <input type="radio" class="form-check-input" name="Type" value="VIP" @(Model.Type == "VIP" ? "Checked" : "")>VIP
+        </div>
+        <input type="submit" class="btn btn-primary" value="Update" />
+        <input type="reset" class="btn btn-primary" value="Cancel" />
+    </form>
+</body>

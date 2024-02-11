@@ -1,0 +1,6 @@
+D:\Training Classes 2023\Asp.net MVC5\Batch - 12\.net core basic\TOMS\TOMS.Helper\bin\Debug\TOMS.Helper.dll
+D:\Training Classes 2023\Asp.net MVC5\Batch - 12\.net core basic\TOMS\TOMS.Helper\bin\Debug\TOMS.Helper.pdb
+D:\Training Classes 2023\Asp.net MVC5\Batch - 12\.net core basic\TOMS\TOMS.Helper\obj\Debug\TOMS.Helper.csproj.AssemblyReference.cache
+D:\Training Classes 2023\Asp.net MVC5\Batch - 12\.net core basic\TOMS\TOMS.Helper\obj\Debug\TOMS.Helper.csproj.CoreCompileInputs.cache
+D:\Training Classes 2023\Asp.net MVC5\Batch - 12\.net core basic\TOMS\TOMS.Helper\obj\Debug\TOMS.Helper.dll
+D:\Training Classes 2023\Asp.net MVC5\Batch - 12\.net core basic\TOMS\TOMS.Helper\obj\Debug\TOMS.Helper.pdb
